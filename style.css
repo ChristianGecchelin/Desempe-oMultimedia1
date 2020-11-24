@@ -1,0 +1,248 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #616161;
+}
+h1 {
+  text-align: center;
+}
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+  flex-wrap: wrap;
+}
+.contenedor .caja {
+  position: relative;
+  background: #ff0;
+  width: 45%;
+  height: 30em;
+  margin-bottom: 1em;
+}
+.contenedor .caja .imgBox {
+  position: relative;
+  overflow: hidden;
+}
+.contenedor .caja .imgBox .tamanoImagenes {
+  object-fit: contain;
+  width: 100%;
+  height: 30em;
+  transition: transform 2s;
+  -webkit-transition: transform 2s;
+  -moz-transition: transform 2s;
+  -ms-transition: transform 2s;
+  -o-transition: transform 2s;
+}
+.contenedor .caja:hover .imgBox .tamanoImagenes {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.contenedor .caja .detalles {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  left: 10%;
+  background: rgba(0, 0, 0, 0.8);
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  transition: transform 2s;
+  -webkit-transition: transform 2s;
+  -moz-transition: transform 2s;
+  -ms-transition: transform 2s;
+  -o-transition: transform 2s;
+}
+.contenedor .caja:hover .detalles {
+  transform: scaleY(1) ;
+  -webkit-transform: scaleY(1) ;
+  -moz-transform: scaleY(1) ;
+  -ms-transform: scaleY(1) ;
+  -o-transform: scaleY(1) ;
+}
+.contenedor .caja .detalles .contenido {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  width: 94%;
+  font-family: sans-serif;
+}
+.contenedor .caja .efecto {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: transform 2s;
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    -ms-transition: transform 2s;
+    -o-transition: transform 2s;
+}
+.contenedor .caja .efecto .fondo {
+    position: absolute;
+    bottom: 0%;
+    left: 35%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    color: #fff;
+    width: 100%;
+}
+.rotado{
+    opacity: 0.6;
+}
+.rotado:hover{
+    transition: transform 2s;
+    -webkit-transition: transform 2s;
+    -moz-transition: transform 2s;
+    -ms-transition: transform 2s;
+    -o-transition: transform 2s;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+
+
+.contenedor .caja:hover .efecto {
+    transform: scaleX(1) ;
+    -webkit-transform: scaleX(1) ;
+    -moz-transform: scaleX(1) ;
+    -ms-transform: scaleX(1) ;
+    -o-transform: scaleX(1) ;
+}
+
+
+.contenedor .caja .detalles .contenido h2 {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 3em;
+  color: #757575;
+}
+.contenedor .caja .detalles2 {
+     position: absolute;
+     top: 15%;
+     right: 0.1%;
+     bottom: 9%;
+     left: 15%;
+     background: rgba(0, 0, 0, 0.6);
+     border-right: 50px solid transparent;
+     border-top: 50px solid transparent;
+     border-right: 50px solid rgba(240, 173, 78, 0.5);
+     border-bottom: 50px solid  rgba(240, 173, 78, 0.5);
+     transform: scaleY(0);
+     transition: transform 2s;
+     -webkit-transition: transform 2s;
+     -moz-transition: transform 2s;
+     -ms-transition: transform 2s;
+     -o-transition: transform 2s;
+}
+  .contenedor .caja:hover .detalles2 {
+    transform: scaleY(1) ;
+    -webkit-transform: scaleY(1) ;
+    -moz-transform: scaleY(1) ;
+    -ms-transform: scaleY(1) ;
+    -o-transform: scaleY(1) ;
+  }
+  .contenedor .caja .detalles2 .contenido2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    width: 94%;
+    font-family: sans-serif;
+  }
+h1 {
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-size: 8em;
+  margin: 0.3em 0 0.2em 0;
+  font-family: "Nerko One", cursive;
+}
+@media screen and (max-width: 1920px) {
+  .contenedor .caja {
+    width: 35%;
+    background: rgba(0, 0, 0, 0);
+  }
+}
+@media screen and (max-width: 1100px) {
+    .contenedor .caja .imgBox .tamanoImagenes{
+        height: 17em;
+    }
+    .contenedor .caja {
+    width: 40%;
+    background: rgba(0, 0, 0, 0);
+    height: 20em;
+  }
+  h1 {
+    margin: 0.4em 0 0.2em 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+    .contenedor .caja {
+      width: 70%;
+      margin-bottom: 15%;
+      background: rgba(0, 0, 0, 0);
+      height: 12em;
+    }
+    .contenedor {
+      margin: 0;
+    }
+    .contenedor .caja .imgBox .tamanoImagenes {
+      height: 17em;
+    }
+    h1 {
+      margin: 1em 0 0.2em 0;
+      width: 100%;
+      font-size: 3em;
+    }
+@media screen and (max-width: 500px) {
+  .contenedor .caja {
+    width: 70%;
+    margin-bottom: 10%;
+    background: rgba(0, 0, 0, 0);
+    height: 12em;
+  }
+  .contenedor {
+    margin: 0;
+  }
+  .contenedor .caja .imgBox .tamanoImagenes {
+    height: 17em;
+  }
+  h1 {
+    margin: 1em 0 0.2em 0;
+    width: 100%;
+    font-size: 3em;
+  }
+}
